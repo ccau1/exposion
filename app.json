@@ -1,0 +1,17 @@
+{
+  "name": "exposion",
+  "displayName": "exposion",
+  "expo": {
+    "name": "exposion",
+    "slug": "exposion",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
