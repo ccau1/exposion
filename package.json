@@ -1,4 +1,6 @@
 {
+  "name": "exposion",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "android": "react-native run-android",
@@ -43,6 +45,5 @@
   },
   "jest": {
     "preset": "react-native"
-  },
-  "private": true
+  }
 }
