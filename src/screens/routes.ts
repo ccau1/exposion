@@ -15,29 +15,29 @@ const routes: Routes = [
             {
               name: "Home",
               component: "HomeScreen",
-              url: "/",
+              path: "/",
               auth: [],
             },
             {
               name: "Home1",
               component: "HomeScreen",
-              url: "/",
+              path: "/",
               auth: [],
             },
           ],
         },
-        url: "/",
+        path: "/",
       },
       {
         name: "BlueprintEditor",
         component: "BlueprintEditorScreen",
-        url: "/blueprints/:_id",
+        path: "/blueprints/:_id",
         auth: [],
       },
       {
         name: "Settings",
         component: "SettingsScreen",
-        url: "/settings",
+        path: "/settings",
         auth: [],
       },
     ],
@@ -47,8 +47,8 @@ const routes: Routes = [
 export const getRouteUrls = (routes: Routes): LinkConfig => {
   return routes.reduce<LinkConfig>((urls, route) => {
     route.screens?.forEach((screen) => {
-      if (screen.url) {
-        urls[screen.name] = screen.url;
+      if (screen.path) {
+        urls[screen.name] = screen.path;
       }
       if (screen.navigator) {
         urls = { ...urls, ...getRouteUrls([screen.navigator]) };

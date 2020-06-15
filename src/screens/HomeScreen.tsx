@@ -9,6 +9,10 @@ const HomeScreen = ({ navigation }) => {
       <Text>home screen</Text>
       <Button title="Toggle Drawer" onPress={() => navigation.toggleDrawer()} />
       <Button
+        title="Go to BlueprintEditor"
+        onPress={() => navigation.navigate("BlueprintEditor", { id: "123" })}
+      />
+      <Button
         title="Go to Settings"
         onPress={() => navigation.navigate("Settings")}
       />

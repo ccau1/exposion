@@ -2,7 +2,7 @@ import { SFC } from "react";
 
 export interface RouteScreen {
   name: string;
-  url: string;
+  path: string;
   component?: string | SFC;
   navigator?: RouteNavigator;
   auth?: string[];

@@ -1,6 +1,8 @@
-import {createStore, combineReducers} from 'redux';
+import { createStore, combineReducers } from "redux";
 
-const AppReducer = combineReducers({});
+const AppReducer = combineReducers({
+  dummy: () => ({}),
+});
 
 const store = createStore(AppReducer);
 
